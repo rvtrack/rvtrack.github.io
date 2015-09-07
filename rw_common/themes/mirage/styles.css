@@ -1,0 +1,579 @@
+/* @group General Styles */
+body {margin:0;padding:0;font-family: Helvetica, Arial, Verdana, sans-serif;font-size: 12px;line-height: 1.3em;background-image: url(images/darkgradient.png);background-repeat: repeat-x;}
+
+p {}
+
+b, strong {}
+
+a:link, a:visited {text-decoration: none;}
+a:hover, a:active {text-decoration: underline;}
+
+img {	border: none;}
+
+.image-left {float: left;padding-right: 15px;}
+
+.image-right {float: right;padding-left: 15px;}
+
+h1, h2, h3, h4, h5, h6 {margin: 0;line-height: 1.6em;padding-bottom: 0.1em;}
+
+/* @end */
+/* @group Layout */
+#container {padding:20px 0;}
+
+#EC1WrapperContainer {background-color:transparent;position:absolute;z-index: 9001;top: -200px;margin: 0 auto;width: 100%;height: auto;}
+#EC1Wrapper {background-color:#111;opacity: 0.93;filter:alpha(opacity=93);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=93)";width: 950px;margin: 0 auto;height: 150px;position:relative;}
+
+#extraContainer1 {position: relative;z-index: 9002;color: white;width: 850px;margin: 0 auto;padding: 15px;}
+
+#EC1TabWrapper {width: 870px;margin: 0 auto;padding: 0 15px;}
+#EC1Tab {display: block;color: white;margin: 0 auto 10px;padding:5px 10px;float: right;cursor: pointer;font-weight: bold;-moz-border-radius: 3px; -webkit-border-radius: 3px;text-shadow: 0 1px 0 #000000;}
+
+#closeButton {position: absolute;bottom:5px;right:48.5%;z-index: 9003;padding: 5px 10px;color: white;font-weight: bold;cursor: pointer;-moz-border-radius: 3px; -webkit-border-radius: 3px;text-shadow: 0 1px 0 #000000;}
+
+#topContainer, #menuContainer, #navigation, #menuShadow, #midContainer, #headerImageLower, #EC6Wrapper, #bottomContainer, #breadcrumbcontainer {width: 900px;margin: 0 auto;}
+
+#menuContainer {position: relative;z-index: 5;background: url(images/ddmenubg.png) center center repeat-x;height: 30px;-moz-border-radius-topleft: 0;-moz-border-radius-topright: 0;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+
+#midContainer {background-color: #aea;margin-top: 0;position: relative;z-index: 0;top: -15px;}
+
+#bottomContainer {background-color: transparent;position: relative;top: -15px;}
+
+.clearer {clear: both;}
+
+#logoTitleWrapper {position: absolute;top: 0;width: 100%;height: 200px;}
+#logoTitle {margin: 30px 15px 15px 15px;position: absolute;top: 0;left: 0;float: left;width: 97%;}
+#logoTitle img {}
+#logoTitle h1 {margin: 0;padding: 0 5px;font-size: 2.2em;line-height: 1.4em;text-shadow: 0 1px 0 #000;}
+#logoTitle h2 {margin: 0;padding: 0 5px;font-size: 1.2em;line-height: 1.4em;}
+
+
+.logo {padding-right: 15px;}
+.logo, .titleSlogan {float: left;}
+
+#headerImageWrapper {position: relative;}
+#headerImage {margin: 0;padding: 0;-moz-border-radius-topleft: 7px;-moz-border-radius-topright: 7px;-webkit-border-top-right-radius: 7px;-webkit-border-top-left-radius: 7px;background: transparent url(images/editable_images/image1.jpg) top center no-repeat;height: 200px;display: block;}
+#headerImageLower #headerImage {-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;}
+#headerImageLower, #headerImageLower #headerImage {margin: 0;padding: 0;}
+
+#mobileMenuTab, #hideMenu {display: none;}
+
+#menuShadow {height: 10px;background: transparent url(images/menuShadow.png) top repeat-x;position: relative;z-index: 3;top: -5px;clear: both;}
+
+#contentContainer {float: left;width: 70%;padding-bottom: 10px;}
+
+#contentContainer #content {padding: 15px 5px 15px 15px;}
+
+#sidebarContainer {padding: 15px 15px 15px 5px;float: right;width:25%;}
+
+#sidebarContainer #sidebar {}
+
+#sidebarContainer .sideHeader {font-size: 2em;line-height: 1.2em;padding-bottom: 0.3em;}
+
+#footer {padding:0 15px;height: 2.3em;line-height: 2.2em;-moz-border-radius-bottomleft: 7px;-moz-border-radius-bottomright: 7px;-webkit-border-bottom-right-radius: 7px;-webkit-border-bottom-left-radius: 7px;background-color: black;}
+#footer a:link, #footer a:visited {}
+#footer a:hover, #footer a:active {}
+.footer {width: 100%;text-align: center;font-size: 0.8em;}
+
+#rw_email_contact {padding-left: 3px;}
+	
+/* @end */
+
+/* @group ExtraContent */
+#EC1Tab, #extraContainer2, #extraContainer3, #extraContainer4, #extraContainer5, #extraContainer6 {display:none;}
+
+#extraContainer3 {width: 30%;margin: 10px;padding:10px;position: absolute;top: 0;right: 0;float: right;-moz-border-radius: 5px;-webkit-border-radius: 5px;max-height: 160px;overflow: hidden;background-image: none;}
+
+#extraContainer4 {margin: -10px auto 5px;padding: 25px 15px;overflow: auto;}
+
+#extraContainer5  {margin-bottom: 10px;padding: 10px;overflow: auto;}
+
+#EC6Wrapper {margin: 0 auto;position: relative;top: -5px;}
+#extraContainer6 {padding: 10px 15px;overflow: auto;}
+/* @end */
+
+
+/* @group Bread-crumb */
+#breadcrumbcontainer {margin: 0;padding: 0;font-size: 0.8em;}
+
+#breadcrumbcontainer ul {margin-left:-40px;margin-top:0;margin-right: 30px;list-style: none;float: right;}
+
+#breadcrumbcontainer li {float: left;}
+
+#breadcrumbcontainer a {text-decoration: none;}
+
+#breadcrumbcontainer a:hover {text-decoration: underline;}
+	
+/* @end */
+
+/* @group Toolbar */
+/* Toolbar Styles */
+#navigation {position: relative;}
+
+#navigation #current {}
+
+#navigation #current:hover {}
+
+#navigation .currentAncestor {}
+
+#navigation {margin: 0 auto;background-color: transparent;height: 30px;font-size: 1.2em;position: relative;z-index: 100;}
+
+/* Drop Down Menu CSS */
+
+/* Main Menu Items */
+.menu ul #current, .menu ul .currentAncestor {position: relative;top:-5px;height: 35px;line-height: 40px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;-webkit-border-top-right-radius: 5px;-webkit-border-top-left-radius: 5px;}
+
+.menu ul {margin: 0 10px;padding: 0;list-style-type: none;list-style-position: outside;position: relative;z-index: 100;}
+.menu li {position: relative;float: left;}
+.menu a {text-transform: none;}
+.menu ul li {padding: 0;}
+.menu ul a {display: block;padding: 0 10px;color: #fff;text-decoration: none;height:30px;line-height: 30px;}
+.menu ul a:hover {}
+
+.menu ul li.ddarrow a {padding-right: 20px;}
+.menu ul li.ddarrow span {position:absolute;top:0;right:3px;float:right;width:15px;height:30px;background: transparent url(images/ddarrow-down.png) center right no-repeat;cursor: pointer;}
+
+/* Drop Down Menu Items */
+/* First Level */
+.menu ul ul {margin: 0;padding: 7px 5px;position: absolute;top: 30px;display: none;-moz-border-radius-bottomleft: 3px;-moz-border-radius-bottomright: 3px;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;background: transparent url(images/menuShadow.png) top repeat-x;}
+.menu ul ul a {display: block;width: 125px;float: left;padding: 0 5px;height: auto;line-height: 2em;color: #fff;text-decoration: none;}
+.menu ul ul a:hover {}
+.menu ul ul li:first-child {border-top: none;}
+
+.menu ul ul #current, .menu ul ul .currentAncestor {position: relative;top:auto;height: auto;line-height: 2em;-moz-border-radius-topleft: 0;-moz-border-radius-topright: 0;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+
+.menu ul li.ddarrow ul a {padding-right: 5px;} /* Makes sure Main Menu padding doesn't filter down to child menu items. */
+.menu ul ul li.ddarrow a {padding: 0 5px;}
+.menu ul ul li.ddarrow span {background: transparent url(images/ddarrow-right.png) center right no-repeat;height:2em;}
+
+/* Second Level and Beyond */
+.menu ul ul ul {top: auto;-moz-border-radius-topright: 3px;-webkit-border-top-right-radius: 5px;}
+.menu ul li ul ul {left: 140px;/* margin: 0 0 0 -1px; */}
+
+/* Hide Drop Down Menu Items */
+.menu ul li:hover ul, .menu ul li:hover ul ul, .menu ul li:hover ul ul ul, .menu ul li:hover ul ul ul ul, .menu ul li:hover ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul ul ul ul {display: none;}
+/* Show on Hover */
+.menu ul li:hover ul, .menu ul li li:hover ul, .menu ul li li li:hover ul, .menu ul li li li li:hover ul, .menu ul li li li li li:hover ul, .menu ul li li li li li li:hover ul, .menu ul li li li li li li li:hover ul, .menu ul li li li li li li li li:hover ul, .menu ul li li li li li li li li li:hover ul {display: block;}
+
+/* @end */
+
+/* @group Sitemap */
+
+.rw-sitemap ul { padding-left: 5px; }
+
+.rw-sitemap ul li { margin-top: 10px;list-style: none;font-weight: bold;font-size: 1.5em; }
+
+.rw-sitemap ul li:last-child {  }
+
+.rw-sitemap ul li li { margin-top: auto;list-style: disc;font-weight: normal;font-size: 0.7em; }
+
+.rw-sitemap ul li li li { list-style: circle;font-size: 1em; }
+
+.rw-sitemap ul li li:last-child {  }
+
+.rw-sitemap ul ul { margin-top: 5px;padding-left: 25px; }
+
+.rw-sitemap ul ul ul { margin-top: auto; }
+
+.rw-sitemap ul li li li li { list-style: square; }
+
+/* @end */
+
+/* @group Global Classes */
+blockquote, .standout {}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+.imageStyle {}
+
+/* Main content area unordered list styles */
+#contentContainer #content ul {}
+#contentContainer #content li {}
+ul.disc {	list-style-type: disc;}
+ul.circle {	list-style-type: circle;}
+ul.square {	list-style-type: square;}
+ol.arabic-numbers {	list-style-type: decimal;}
+ol.upper-alpha {	list-style-type: upper-latin;}
+ol.lower-alpha {	list-style-type: upper-latin;}
+ol.upper-roman {	list-style-type: upper-roman;}
+ol.lower-roman {	list-style-type: lower-roman;}
+
+/* Sidebar area unordered list styles */
+#sidebarContainer #sidebar ul {}
+#sidebarContainer #sidebar li {}
+
+/* Table Styles */
+table {}
+/* @end */
+
+/* @group Blog */
+
+/* @group Tag Cloud */
+
+ul.blog-tag-cloud:before {content: "Tag Cloud";display:block;margin-bottom:5px;font-size: 1.7em;}
+ul.blog-tag-cloud {border-top:1px solid #666;padding: 10px 0 0;}
+
+ul.blog-tag-cloud li {display: inline;}
+ul.blog-tag-cloud li a:after {content: ", ";}
+
+#sidebarContainer #sidebar ul.blog-tag-cloud li a {}
+
+#sidebarContainer #sidebar ul.blog-tag-cloud li a:hover {text-decoration: underline;}
+
+.blog-tag-size-1 {font-size: 0.7em;}
+
+.blog-tag-size-2 {font-size: 0.75em;}
+
+.blog-tag-size-3 {font-size: 0.8em;}
+
+.blog-tag-size-4 {font-size: 0.85em;}
+
+.blog-tag-size-5 {font-size: 0.9em;}
+
+.blog-tag-size-6 {font-size: 0.95em;}
+
+.blog-tag-size-7 {font-size: 1.0em;}
+
+.blog-tag-size-8 {font-size: 1.05em;}
+
+.blog-tag-size-9 {font-size: 1.1em;}
+
+.blog-tag-size-10 {font-size: 1.15em;}
+
+.blog-tag-size-11 {font-size: 1.2em;}
+
+.blog-tag-size-12 {font-size: 1.25em;}
+
+.blog-tag-size-13 {font-size: 1.3em;}
+
+.blog-tag-size-14 {font-size: 1.35em;}
+
+.blog-tag-size-15 {font-size: 1.4em;}
+
+.blog-tag-size-16 {font-size: 1.45em;}
+
+.blog-tag-size-17 {font-size: 1.5em;}
+
+.blog-tag-size-18 {font-size: 1.55em;}
+
+.blog-tag-size-19 {font-size: 1.6em;}
+
+.blog-tag-size-20 {font-size: 1.65em;}
+/* @end */
+
+/* @group Archive Page */
+
+.blog-archive-background {}
+
+.blog-entry-summary {}
+
+.blog-archive-headings-wrapper {}
+
+.blog-archive-entries-wrapper {}
+
+.blog-archive-entries-wrapper .blog-entry {}
+
+.blog-archive-month {}
+
+.blog-archive-link {}
+
+.blog-archive-link a:link, .blog-archive-link a:visited {}
+	
+/* @end */
+
+.blog-entry-date, .blog-entry-tags, /* .blog-entry-category,  */.blog-entry-comments, #blog-categories a, .blog-archive-link-enabled, .blog-rss-link, .blog-comments-rss-link {background: transparent url(images/blogIcons.png) no-repeat;line-height: 20px;}
+
+.blog-entry {margin: 0 0 10px 0;}
+
+h1.blog-entry-title {margin:0;padding: 0;margin-bottom: 5px;}
+
+
+h1.blog-entry-title a {}
+
+.blog-entry-date {background-position:0 1px;padding-left: 20px;}
+
+/*styles the category link in the main entry */
+.blog-entry-category {/* background-position:-4000px 0;margin-left:5px;padding-left: 20px; */}
+
+.blog-entry-category a:link, .blog-entry-category a:visited {}
+
+.blog-read-more {}
+
+.blog-entry-body {margin: 0;padding: 10px 0;}
+
+.blog-entry-comments {background-position:-1000px 3px;margin:5px 0;padding-left:20px;}
+
+p.blog-entry-tags {background-position:-2000px 1px;margin-top:10px;padding-left:22px;}
+
+/* styles the archives in the blog sidebar */
+#blog-archives:before {content: "Archives";display:block;margin-bottom:5px;font-size: 1.7em;}
+#blog-archives {border-top:1px solid #666;padding: 10px 0 5px;}
+#blog-archives br {display: none;}
+
+.blog-archive-link-enabled:after {content: ", ";}
+.blog-archive-link-enabled {background-position:-5000px 0;margin-left:3px;padding:2px 0 2px 20px;}
+.blog-archive-link-enabled a {}
+
+.blog-archive-link-disabled:after {content: ", ";}
+.blog-archive-link-disabled {display: inline;}
+
+/* Styles the blog categories in the blog sidebar */
+#blog-categories:before {content: "Categories";display:block;margin-bottom:5px;font-size: 1.7em;}
+#blog-categories {margin-top:15px;border-top:1px solid #666;padding: 10px 0 15px;}
+#blog-categories a {background-position:-4000px 0;padding: 2px 0 2px 20px;}
+
+.blog-category-link-enabled {}
+
+.blog-category-link-disabled {padding-left:18px;}
+
+/* Styles the blog RSS feeds in the blog sidebar */
+#blog-rss-feeds:before {content: "RSS";display:block;margin-bottom:5px;font-size: 1.7em;}
+#blog-rss-feeds {border-top:1px solid #666;padding: 10px 0;}
+
+.blog-rss-link {background-position:-3000px 1px;padding: 2px 0 2px 20px;}
+
+.blog-comments-rss-link {background-position:-1000px 2px;margin-left:18px;padding: 2px 0 2px 20px;}
+
+/* @end */
+
+/* @group File Sharing */
+
+.filesharing-description {}
+
+.filesharing-item {margin: 10px auto 20px;padding: 5px 0;border-bottom: solid 2px #dadada;}
+
+.filesharing-item-title {padding-bottom: 5px;}
+
+.filesharing-item-title:before {content: "-";}
+.filesharing-item-title:after {content: "-";}
+
+.filesharing-item-title a:link {}
+
+.filesharing-item-title a:hover {}
+
+.filesharing-item-title a:visited {}
+
+.filesharing-item-description {padding: 0 0 15px 20px;}
+
+/* @end */
+
+/* @group Photo Album */
+
+#flashcontent {text-align: center;}
+
+/* @group Index Page (Thumbnail view) */
+
+.album-title {padding-bottom:10px;font-size: 1.8em;}
+
+.album-description {font-size: 1.2em;}
+
+.album-wrapper {margin: 0 auto;display: block;}
+
+.thumbnail-wrap {padding: 5px 35px 80px;display: inline;float: left;margin: 0;}
+
+.thumbnail-frame {padding:10px;display: inline;float: left;border: 5px solid #dadada;}
+
+.thumbnail-frame:hover {}
+
+.thumbnail-frame a {}
+
+.thumbnail-frame a:hover {}
+
+.thumbnail-frame img {}
+
+.thumbnail-caption {margin: 5px auto 10px;text-align: center;color: gray;font-size: 0.8em;}
+	
+/* @end */
+
+/* @group Single Page (Photo view) */
+
+.photo-background {margin: 10px auto 10px auto;text-align: center;}
+
+.photo-navigation {margin: 0 auto;width: 700px;text-align: center;font-size: 1.2em;}
+
+.photo-links {padding: 3px 0 10px 0;}
+
+.photo-navigation a:link, .photo-navigation a:visited {}
+
+.photo-navigation a:hover {}
+
+.photo-frame{margin: 0 auto;text-align: center;border: solid 5px #dadada;}
+
+.photo-title {padding:3px;font-size: 2.0em;}
+
+.photo-caption {padding:5px;font-size: 1.2em;color: gray;}
+
+/* @group EXIF data */
+/* Data wrapper */
+.exif-data {}
+
+.exif-data p {}
+
+/* p tag classes for all exif data */
+p.exif-version {}
+
+p.exif-colour-space {}
+
+p.exif-focal-length {}
+
+p.exif-dimensions {}
+
+p.exif-pixel-y-dimension {}
+
+p.exif-pixel-x-dimension {}
+
+p.exif-oecf-value {}
+
+p.exif-subsec-time-original {}
+
+p.exif-exposure-mode {}
+
+p.exif-spatial-frequency-response {}
+
+p.exif-scene-capture-type {}
+
+p.exif-subject-location {}
+
+p.exif-shutter-speed {}
+
+p.exif-datetime-original {}
+
+p.exif-subsec-time {}
+
+p.exif-compressed-bits-per-pixel {}
+
+p.exif-flash-energy {}
+
+p.exif-saturation {}
+
+p.exif-brightness {}
+
+p.exif-exposure-time {}
+
+p.exif-f-number {}
+
+p.exif-file-source {}
+
+p.exif-gain-control {}
+
+p.exif-subject-area {}
+
+p.exif-cfa-pattern {}
+
+p.exif-scene-type {}
+
+p.exif-white-balance {}
+
+p.exif-flash {}
+
+p.exif-exposure-index {}
+
+p.exif-flashpix-version {}
+
+p.exif-device-setting-description {}
+
+p.exif-focalplane-x-resolution {}
+
+p.exif-image-uniqueid {}
+
+p.exif-components-configuration {}
+
+p.exif-light-source {}
+
+p.exif-sensing-method {}
+
+p.exif-aperture {}
+
+p.exif-sharpness {}
+
+p.exif-exposure-program {}
+
+p.exif-subject-distance {}
+
+p.exif-subsec-time-digitized {}
+
+p.exif-contrast {}
+
+p.exif-focalplane-resolution-unit {}
+
+p.exif-gamma {}
+
+p.exif-35mm-focal-length {}
+
+p.exif-datetime-digitized {}
+
+p.exif-subject-distance-range {}
+
+p.exif-custom-rendered {}
+
+p.exif-max-aperture {}
+
+p.exif-sound-file {}
+
+p.exif-metering-mode {}
+
+p.exif-spectral-sensitivity {}
+
+p.exif-exposure-bias {}
+
+p.exif-focalplane-y-resolution {}
+
+p.exif-iso-rating {}
+
+p.exif-maker-note {}
+
+p.exif-digital-zoom-ratio {}
+
+p.exif-user-comment {}
+/* @end */
+
+/* @end */
+	
+/* @end */
+
+/* @group Quicktime Page */
+
+.movie-description {}
+	
+/* @end */
+
+/* @group Quicktime Album */
+
+/* @group Index Page (Movie Thumbnail view) */
+
+.movie-page-title {padding-bottom:10px;font-size: 1.8em;}
+
+.movie-page-description {font-size: 1em;padding-bottom: 10px;}
+
+.movie-thumbnail-frame {margin: 5px auto;padding: 5px 15px 70px;display: inline;float: left;margin: 0;}
+
+.movie-thumbnail-frame img {border: 5px solid #dadada;}
+
+.movie-thumbnail-frame:hover {}
+
+.movie-thumbnail-caption {margin: 5px auto 10px;text-align: center;color: gray;font-size: 0.8em;}
+	
+/* @end */
+
+/* @group Single Page (Movie View) */
+
+.movie-background {margin: 20px;text-align: center;}
+
+.movie-title {margin: 0 auto;padding:3px;font-size: 1.6em;text-align: center;}
+
+.movie-frame {margin: 0 auto;text-align: center;border: solid 5px #dadada;}
+	
+/* @end */
+
+
+/* @end */
+
+/* @group Contact Form */
+.message-text {} 
+
+.required-text {} 
+
+.form-input-field {margin: 3px 0 2px 0;padding: 5px;border: 1px solid #bbb;background-color: #eee;color: #666;font-size: 0.9em;} 
+
+.form-input-button {} 
+/* @end */

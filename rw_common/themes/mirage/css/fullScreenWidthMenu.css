@@ -1,0 +1,5 @@
+#menuContainer, #menuShadow, #menuContainer[style], #menuShadow[style] {width: auto !important;}
+
+#menuContainer, #menuContainer[style] {-moz-border-radius-topleft: 0 !important;-moz-border-radius-topright: 0 !important;-webkit-border-top-right-radius: 0 !important;-webkit-border-top-left-radius: 0 !important;}
+
+#navigation {margin: 0 auto;}

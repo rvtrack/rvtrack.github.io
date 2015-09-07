@@ -1,0 +1,9 @@
+body {font-size: 8px;}
+
+#menuContainer, #navigation {height: 20px;}
+.menu ul #current, .menu ul .currentAncestor {height: 25px;line-height: 30px;}
+.menu ul a {height: 20px;line-height: 20px;}
+.menu ul li.ddarrow span {height: 20px;}
+.menu ul ul {top: 20px;}
+
+#footer {height: 2.6em;line-height: 2.5em;}

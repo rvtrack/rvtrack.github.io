@@ -1,0 +1,16 @@
+body {font-size: 12pt;}
+.clearer {clear: both;}
+#EC1WrapperContainer, #EC1TabWrapper, #extraContainer2, #extraContainer3, #menuShadow, #breadcrumbcontainer, #mobileMenuTab, #hideMenu {display:none;}
+#extraContainer4, #extraContainer5, #extraContainer6 {border: none !important;}
+.image-left {float: left;padding-right: 15px;}
+.image-right {float: right;padding-left: 15px;}
+#logoTitle h1 {font-size: 20pt;line-height: 14pt;}
+#logoTitle h2 {font-size: 14pt;line-height: 14pt;}
+.logo, .titleSlogan {float: left;}
+.logo {padding-right: 5pt;padding-top: 5pt;}
+.menu ul {list-style: none;padding-bottom: 10pt;padding-left: 0;}
+.menu li {float: left;}
+.menu a {padding: 0 3pt;font-weight: bold;font-size: 14pt;}
+#contentContainer, #sidebarContainer {float: none;width: auto !important;}
+#sidebarContainer .sideHeader {font-size: 16pt;font-weight: bold;padding-bottom: 5pt;padding-top: 15pt;}
+#footer {padding-top: 10pt;font-size: 10pt;text-align: center;}

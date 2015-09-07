@@ -1,0 +1,223 @@
+@media only screen and (max-device-width: 480px) {
+
+html {-webkit-text-size-adjust: none;}
+
+/* @group General Styles */
+body {}
+p {}
+b, strong {}
+a:link, a:visited {}
+a:hover, a:active {}
+img {border: none;}
+.imageStyle {height: auto;}
+.image-left {padding-right: 10px;}
+.image-right {padding-left: 10px;}
+h1, h2, h3, h4, h5, h6 {}
+.clearer {clear: both;}
+
+/* @end */
+/* @group Layout */
+#container {margin:0;padding: 0;}
+
+#EC1WrapperContainer, #EC1Wrapper, #EC1TabWrapper {display: none;width: auto;}
+
+#topContainer, #menuContainer, #navigation, #menuShadow, #midContainer, #headerImageLower, #bottomContainer, #contentContainer, #contentContainer #content, #sidebarContainer, #EC6Wrapper, #breadcrumbcontainer, #footer, .footer, .photo-navigation {width: auto !important;margin: 0;}
+
+#midContainer {position: relative;margin-top: -15px;top: auto;}
+
+#bottomContainer {top:auto;}
+
+.clearer {clear: both;}
+
+#logoTitleWrapper {height: 80px;}
+#logoTitle, #logoTitle[style] {margin: 8px 5px 5px;width: auto !important;bottom: auto;top: 0;}
+#logoTitle img {}
+#logoTitle h1 {margin: 0;padding: 0;font-size: 1.4em;}
+#logoTitle h2 {margin: 0;padding: 0;font-size: 1em;}
+
+.logo, .titleSlogan {height: auto !important;}
+
+#headerImageWrapper {overflow: hidden;}
+#headerImage {display: block;height: 80px !important;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+#headerImage .iPhoneHeaderImage {height: auto;}
+#headerImageLower {overflow: hidden;}
+
+#menuContainer, #menuContainer[style] {display: none;padding-top: 10px;width:auto;height: auto;-webkit-border-top-right-radius: 0 !important;-webkit-border-top-left-radius: 0 !important;background-image: url(images/menuShadow.png);background-position: top;background-repeat: repeat-x;}
+
+#mobileMenuTab { display: block;position: absolute;right: 5px;top: 5px;width: 30px;height: 50px;background: transparent url(images/mobileMenuTab.png) 0 -50px;cursor: pointer; }
+
+#menuShadow {margin-top:5px;height: 10px;background: transparent url(images/menuShadow.png) top repeat-x;position: relative;z-index: 10;}
+
+#breadcrumbTop {display: none;}
+
+#contentContainer {float: none;}
+
+#contentContainer #content {padding: 10px;}
+
+#sidebarContainer {padding: 10px;float: none;}
+
+#sidebarContainer #sidebar {}
+
+#sidebarContainer .sideHeader {font-size: 2em;padding-bottom: 0.2em;}
+
+#footer {padding:0 5px;height: 2.3em;line-height: 2.2em;-webkit-border-bottom-right-radius: 0;-webkit-border-bottom-left-radius: 0;}
+#footer a:link, #footer a:visited {}
+#footer a:hover, #footer a:active {}
+.footer {width: auto;text-align: center;font-size: 0.8em;}
+	
+/* @end */
+
+/* @group ExtraContent */
+#EC1Tab, #extraContainer1, #extraContainer2, #extraContainer3 {display:none;}
+
+/* @end */
+
+
+/* @group Bread-crumb */
+#breadcrumbcontainer {width: auto;margin: 0;padding: 0;font-size: 0.8em;}
+
+#breadcrumbcontainer ul {margin: 0;padding: 0;list-style: none;float: left;}
+
+#breadcrumbcontainer li {float: left;}
+
+#breadcrumbcontainer a {text-decoration: none;}
+
+#breadcrumbcontainer a:hover {text-decoration: underline;}
+	
+/* @end */
+
+/* @group Toolbar */
+
+/* Toolbar Styles */
+
+#navigation {margin: 0;padding: 0;height: auto;}
+
+/* >>> Reset Drop Down Menu CSS Values from Desktop Version <<< */
+
+/* Main Menu Items */
+.menu ul #current, .menu ul .currentAncestor {position: relative;top: auto;height: auto;line-height: normal;-moz-border-radius-topleft: 0;-moz-border-radius-topright: 0;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+
+.menu ul {margin: 0;padding: 0;list-style-type: none;list-style-position: outside;position: relative;height: auto;line-height: normal;}
+.menu li {position: relative;float: none;height: auto;}
+.menu ul li {padding: 0;height: auto;}
+.menu ul a {display: block;padding: 0 10px;text-decoration: none;height: auto;}
+.menu ul a:hover {height: auto;}
+
+.menu ul li.ddarrow a {padding-right: 10px;}
+.menu ul li.ddarrow span {display: none;}
+
+/* Drop Down Menu Items */
+/* First Level */
+.menu ul ul #current, .menu ul ul .currentAncestor {position: relative;top: auto;height: auto;line-height: normal;-moz-border-radius-topleft: 0;-moz-border-radius-topright: 0;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+
+.menu ul ul {position: relative;width: auto;top: auto;display: block;border: none !important;}
+.menu ul ul a {display: block;width: auto;float: none;padding: 0 10px;text-decoration: none;}
+.menu ul ul a:hover {}
+.menu ul ul li:first-child {border-top: none;}
+
+.menu ul ul li.ddarrow a {padding: 0 10px;}
+.menu ul ul li.ddarrow span {display: none;}
+
+/* Second Level and Beyond */
+.menu ul ul ul {top: auto;border-top: none;}
+.menu ul li ul ul {left: auto;margin: 0;}
+
+/* Hide Drop Down Menu Items */
+.menu ul li:hover ul ul, .menu ul li:hover ul ul ul, .menu ul li:hover ul ul ul ul, .menu ul li:hover ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul ul ul, .menu ul li:hover ul ul ul ul ul ul ul ul ul {display: block;}
+/* Show on Hover */
+.menu ul li:hover ul, .menu ul li li:hover ul, .menu ul li li li:hover ul, .menu ul li li li li:hover ul, .menu ul li li li li li:hover ul, .menu ul li li li li li li:hover ul, .menu ul li li li li li li li:hover ul, .menu ul li li li li li li li li:hover ul, .menu ul li li li li li li li li li:hover ul {display: block;}
+
+/* >>> End Reset CSS <<< */
+
+/* iPhone Menu CSS */
+#navigation {}
+
+#hideMenu {margin: 0 7px 3px;padding:0;display:block;height:20px;line-height:20px;background: transparent;text-align: right;font-size: 10px;}
+
+.menu {margin: 0;padding:0;font-size: 1.2em;}
+.menu a {margin: 0;padding:0;display:block;}
+.menu ul {display:block;}
+.menu ul a, .menu ul ul a, .menu ul a:hover, .menu ul ul a:hover {display:block;height: 30px;line-height: 30px;}
+.menu ul #current, .menu ul ul #current {font-weight: bold;height: 30px;line-height: 30px;}
+.menu #current:hover {}
+.menu ul .currentAncestor {display:block;height: 30px;line-height: 30px;}
+
+/* Child - Level 1 */
+.menu ul ul {margin:0;padding:0;/* border-bottom: none; */}
+.menu ul ul li {}
+.menu ul ul li a {margin: 0; padding-left: 25px;}
+.menu ul ul .currentAncestor {height: 30px;line-height: 30px;}
+
+/* Child - Level 2 */
+
+.menu ul ul ul{/* border-bottom: none; */}
+.menu ul ul ul li a{margin: 0; padding-left: 40px;}
+.menu ul ul ul .currentAncestor {}
+
+/* Child Level 3 */
+
+.menu ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul li a{margin: 0; padding-left: 55px;}
+.menu ul ul ul ul .currentAncestor {}
+
+/* Child Level 4 */
+
+.menu ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul li a{margin: 0; padding-left: 70px;}
+.menu ul ul ul ul ul a{}
+.menu ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul .currentAncestor {}
+
+/* Child Level 5 */
+
+.menu ul ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul ul li a{margin: 0; padding-left: 85px;}
+.menu ul ul ul ul ul ul a{}
+.menu ul ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul ul .currentAncestor {}
+
+/* Child Level 6 */
+
+.menu ul ul ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul ul ul li a{margin: 0; padding-left: 100px;}
+.menu ul ul ul ul ul ul ul a{}
+.menu ul ul ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul ul ul .currentAncestor {}
+
+/* Child Level 7 */
+
+.menu ul ul ul ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul ul ul ul li a{margin: 0; padding-left: 115px;}
+.menu ul ul ul ul ul ul ul ul a{}
+.menu ul ul ul ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul ul ul ul .currentAncestor {}
+
+/* Child Level 8 */
+
+.menu ul ul ul ul ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul ul ul ul ul li a{margin: 0; padding-left: 130px;}
+.menu ul ul ul ul ul ul ul ul ul a{}
+.menu ul ul ul ul ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul ul ul ul ul .currentAncestor {}
+
+/* Child Level 9 */
+
+.menu ul ul ul ul ul ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul ul ul ul ul ul li a{margin: 0; padding-left: 145px;}
+.menu ul ul ul ul ul ul ul ul ul ul a{}
+.menu ul ul ul ul ul ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul ul ul ul ul ul .currentAncestor {}
+
+/* Child Level 10 */
+
+.menu ul ul ul ul ul ul ul ul ul ul {/* border-bottom: none; */}
+.menu ul ul ul ul ul ul ul ul ul ul ul li a{margin: 0; padding-left: 160px;}
+.menu ul ul ul ul ul ul ul ul ul ul ul a{}
+.menu ul ul ul ul ul ul ul ul ul ul ul a:hover{}
+.menu ul ul ul ul ul ul ul ul ul ul ul .currentAncestor {}
+
+/* @end */
+
+.photo-navigation { font-size: 3em; }
+
+}

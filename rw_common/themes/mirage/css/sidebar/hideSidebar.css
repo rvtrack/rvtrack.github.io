@@ -1,0 +1,4 @@
+#sidebarContainer {display: none;}
+#contentContainer, #contentContainer #content {width: 98% !important;}
+
+#flashcontent {text-align: center;}

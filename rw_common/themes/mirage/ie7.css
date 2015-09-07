@@ -1,0 +1,10 @@
+#EC1TabWrapper {position: relative;z-index: 1;}
+
+#container {zoom: 1;}
+
+.menu ul ul ul {padding-bottom: 0;}
+
+#menuShadow {margin-top: 5px;}
+#midContainer {margin-top: -20px;padding-top: 10px;}
+
+ul.blog-tag-cloud {margin: 5px 0 10px 0;}

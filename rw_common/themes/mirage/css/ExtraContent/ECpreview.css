@@ -1,0 +1,10 @@
+#headerImageUpper, #headerImageLower {display: block;}
+#EC1WrapperContainer {position: relative;top: 0;}
+#extraContainer1, #extraContainer2, #extraContainer3, #extraContainer4, #extraContainer5, #extraContainer6 {display:block;height: 50px;border: 1px dashed red;}
+
+#extraContainer1:after {content: "myExtraContent1";display: block;color: red;}
+#extraContainer2:after {content: "myExtraContent2";display: block;color: red;}
+#extraContainer3:after {content: "myExtraContent3";display: block;color: red;}
+#extraContainer4:after {content: "myExtraContent4";display: block;color: red;}
+#extraContainer5:after {content: "myExtraContent5";display: block;color: red;}
+#extraContainer6:after {content: "myExtraContent6";display: block;color: red;}

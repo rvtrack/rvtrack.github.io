@@ -1,0 +1,6 @@
+#EC1Tab, #closeButton, #extraContainer3 {-moz-border-radius: 0; -webkit-border-radius: 0;}
+#headerImage {-moz-border-radius-topleft: 0;-moz-border-radius-topright: 0;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+#menuContainer, #menuContainer[style] {-moz-border-radius-topleft: 0 !important;-moz-border-radius-topright: 0 !important;-webkit-border-top-right-radius: 0 !important;-webkit-border-top-left-radius: 0 !important;}
+.menu ul #current, .menu ul .currentAncestor {-moz-border-radius-topleft: 0;-moz-border-radius-topright: 0;-webkit-border-top-right-radius: 0;-webkit-border-top-left-radius: 0;}
+.menu ul ul, .menu ul ul ul {-webkit-border-radius: 0;-moz-border-radius: 0;}
+#footer {-moz-border-radius-bottomleft: 0;-moz-border-radius-bottomright: 0;-webkit-border-bottom-right-radius: 0;-webkit-border-bottom-left-radius: 0;}
