@@ -2,8 +2,8 @@
     
     class CloudStack {
         protected $_endpoint = 'http://cloud.yourhead.com/stack/';
-        protected $_cacheDir = '.';
         protected $_cacheExt = 'cache';
+        const     _cacheDir  = 'cloud_cache';
         
         protected $_cachePath = null;
         
@@ -20,7 +20,7 @@
             
             if ($cacheDir)
                 $this->_cacheDir = $cacheDir;
-		    
+            
             $this->_contentURLString = $contentURLString;
             $path = parse_url ($contentURLString, PHP_URL_PATH);
             if (!$path) {
@@ -57,9 +57,35 @@
         // returns the path to the cache file
         protected function cachePath () {
             if (!$this->_cachePath) {
-                $this->_cachePath = $this->_cacheDir . "/" . $this->_stackId . "." . $this->_cacheExt;
+                $this->_cachePath = self::cacheDirPath() . "/" . $this->_stackId . "." . $this->_cacheExt;
             }
             return $this->_cachePath;
+        }
+        
+        // test for the existance of a cache for this stack
+        public static function cacheDirPath () {
+            return dirname(__FILE__) . "/" . self::_cacheDir;
+        }
+        
+        // test for the existance of a cache for this stack
+        public static function cacheDirExists () {
+            return is_dir(self::cacheDirPath());
+        }
+        
+        // create a new cache directory if one doesn't already exist
+        public static function cacheDirCreate () {
+            if (self::cacheDirExists()) return;
+            mkdir (self::cacheDirPath());
+        }
+        
+        // remove all files from the cache directory
+        public static function cacheDirClear () {
+            if (!self::cacheDirExists()) return self::cacheDirCreate();
+            $files = scandir(self::cacheDirPath());
+            foreach ($files as $file) {
+                $f = self::cacheDirPath() . "/" . $file;
+                if (is_file($f) && is_writable($f)) unlink($f);
+            }
         }
         
         // test for the existance of a cache for this stack
@@ -119,6 +145,7 @@
             
             
             if (!empty ($content)) {
+                self::cacheDirCreate();
                 file_put_contents ($this->cachePath (), $content);
             }
             
@@ -169,6 +196,7 @@
                 $content = $this->fileGetFetch ($url);
             if (empty ($content)) return;
             
+            self::cacheDirCreate();
             file_put_contents ($this->cachePath (), $content);
         }
         
@@ -199,22 +227,35 @@
     }
     
     
-    // route a clear operation
-    if ((isset($_GET['userId'])) && (isset($_GET['siteId'])) && (isset($_GET['stackId'])) && (isset($_GET['op']))) {
-        if ($_GET['op'] === 'clear') {
-            $userId = $_GET['userId'];
-            $siteId = $_GET['siteId'];
+    // route operations
+    if ((isset($_GET['userId'])) && (isset($_GET['siteId'])) && (isset($_GET['op']))) {
+        
+        $op = $_GET['op'];
+        $userId = $_GET['userId'];
+        $siteId = $_GET['siteId'];
+        Valid::objectId ($userId);
+        Valid::objectId ($siteId);
+        
+        if ($op === 'clear') {
             $stackId = $_GET['stackId'];
-            Valid::objectId ($userId);
-            Valid::objectId ($siteId);
             Valid::objectId ($stackId);
             $url = 'http://cloud.yourhead.com/stack/' . $userId . '/' . $siteId . '/' . $stackId . '/preview';
             $stack = new CloudStack($url);
             $stack->cacheClear ();
             echo "OK";
+        } else if ($_GET['op'] === 'ping') {
+            echo "OK";
+        } else if ($_GET['op'] === 'flush') {
+            $userId = $_GET['userId'];
+            $siteId = $_GET['siteId'];
+            Valid::objectId ($userId);
+            Valid::objectId ($siteId);
+            CloudStack::cacheDirClear ();
+            echo "OK";
         } else {
-            echo "ERROR: Unknown operation.";
+            echo "ERROR";
         }
+        
     }
     
-?>
+    ?>

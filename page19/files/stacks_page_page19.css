@@ -1,0 +1,68 @@
+
+#stacks_in_196_page19 {
+	font-size: 157%;
+}
+.responsiveTable td
+{
+    min-width: 50px;
+}
+
+
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+table th { font-weight: bold; }
+table td, table th {
+    padding: 9px 10px;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    border-left: 1px solid #C0C0C0;
+    border-top: 1px solid #C0C0C0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+    table td, table th {
+        border-style: none;
+    }
+
+    table.responsiveTable { margin-bottom: 0; }
+
+    .pinned {
+        position: absolute; left: 0; top: 0;
+        background: #fff; width: 35%; overflow: hidden; overflow-x: scroll;
+        border-left: 1px solid #D5D5D5;
+        border-right: 1px solid #D5D5D5;
+    }
+    .pinned table { border-right: none; border-left: none; width: 100%; }
+    .pinned table th, .pinned table td { white-space: nowrap; }
+    .pinned td:last-child { border-bottom: 0; }
+
+    div.table-wrapper {
+        position: relative; margin-bottom: 20px; overflow: hidden;
+        border-right: 1px solid #D5D5D5;
+        border-top: 1px solid #D5D5D5;
+        border-bottom: 1px solid #D5D5D5;
+    }
+    div.table-wrapper div.scrollable { margin-left: 35%; }
+    div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }
+
+    table.responsiveTable td, table.responsiveTable th { position: relative; white-space: nowrap; overflow: hidden; }
+    table.responsiveTable th:first-child, table.responsiveTable td:first-child, table.responsiveTable td:first-child, table.responsiveTable.pinned td { display: none; }
+
+
+}
