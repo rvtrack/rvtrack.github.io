@@ -6488,6 +6488,44 @@ body {
 
 
 
+	
+		/* Media queries for non-Hero banner heights at different breakpoints */
+
+		/* Mobile */
+		@media (max-width: 33.9em) {
+			#stacks_in_4483474_page9 .banner {
+				height: 200px;
+			}
+		}
+
+		@media (min-width: 34em) and (max-width: 47.9em) {
+			#stacks_in_4483474_page9 .banner {
+				height: 200px;
+			}
+		}
+
+		/* Tablets */
+		@media (min-width: 48em) and (max-width: 61.9em) {
+			#stacks_in_4483474_page9 .banner {
+				height: 300px;
+			}
+		}
+
+		/* Desktop */
+		@media (min-width: 62em) and (max-width: 74.9em) {
+			#stacks_in_4483474_page9 .banner {
+				height: 400px;
+			}
+		}
+
+		/* Wide Screens */
+		@media (min-width: 75em) {
+			#stacks_in_4483474_page9 .banner {
+				height: 600px;
+			}
+		}
+	
+
 
 
 
