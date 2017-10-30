@@ -78,7 +78,7 @@ var jQuery = stacks.jQuery;var $ = jQuery;// Sticky Plugin v1.0.4 for jQuery
         s.stickyWrapper.css('height', s.stickyElement.outerHeight());
         s.stickyElement.css('transform', 'translate3d(0px, 0px, 0px)');
 
-        if (scrollTop <= etse) {
+        if (scrollTop < etse) {
           if (s.currentTop !== null) {
             s.stickyElement
               .css({
@@ -143,6 +143,7 @@ var jQuery = stacks.jQuery;var $ = jQuery;// Sticky Plugin v1.0.4 for jQuery
           // Check if sticky has reached end of container and stop sticking
           var stickyWrapperContainer = s.stickyWrapper.parent();
           var unstick = (s.stickyElement.offset().top + s.stickyElement.outerHeight() >= stickyWrapperContainer.offset().top + stickyWrapperContainer.outerHeight()) && (s.stickyElement.offset().top <= s.topSpacing);
+
 
           if( unstick ) {
             s.stickyElement
@@ -325,8 +326,114 @@ var jQuery = stacks.jQuery;var $ = jQuery;// Sticky Plugin v1.0.4 for jQuery
 return stack;})(stacks.com_elixir_stacks_foundryNavigationBar);
 stacks.stacks_in_4483472_page2 = {};
 stacks.stacks_in_4483472_page2 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+var jQuery = stacks.jQuery;var $ = jQuery;// Set Language for Document
+document.documentElement.lang = "en";
+
+$(document).ready(function(){
+  
+
+  
 });
+
+$.fn.elementRealHeight = function () {
+   $clone = this.clone()
+       .css("visibility","hidden")
+       .appendTo($('body'));
+   var $height = $clone.outerHeight();
+   $clone.remove();
+   return $height;
+ };
+
+ $.fn.elementRealWidth = function () {
+    $clone = this.clone()
+        .css("visibility","hidden")
+        .appendTo($('body'));
+    var $width = $clone.outerWidth();
+    $clone.remove();
+    return $width;
+  };
+
+
+  // Handles offsets for anchor tags
+  // (function(document, history, location) {
+  //   var HISTORY_SUPPORT = !!(history && history.pushState);
+  //
+  //   var anchorScrolls = {
+  //     ANCHOR_REGEX: /^#[^ ]+$/,
+  //     OFFSET_HEIGHT_PX: 0,
+  //
+  //     /**
+  //      * Establish events, and fix initial scroll position if a hash is provided.
+  //      */
+  //     init: function() {
+  //       this.scrollToCurrent();
+  //       window.addEventListener('hashchange', this.scrollToCurrent.bind(this));
+  //       document.body.addEventListener('click', this.delegateAnchors.bind(this));
+  //     },
+  //
+  //     /**
+  //      * Return the offset amount to deduct from the normal scroll position.
+  //      * Modify as appropriate to allow for dynamic calculations
+  //      */
+  //     getFixedOffset: function() {
+  //       return this.OFFSET_HEIGHT_PX;
+  //     },
+  //
+  //     /**
+  //      * If the provided href is an anchor which resolves to an element on the
+  //      * page, scroll to it.
+  //      * @param  {String} href
+  //      * @return {Boolean} - Was the href an anchor.
+  //      */
+  //     scrollIfAnchor: function(href, pushToHistory) {
+  //       var match, rect, anchorOffset;
+  //
+  //       if(!this.ANCHOR_REGEX.test(href)) {
+  //         return false;
+  //       }
+  //
+  //       match = document.getElementById(href.slice(1));
+  //
+  //       if(match) {
+  //         rect = match.getBoundingClientRect();
+  //         anchorOffset = window.pageYOffset + rect.top - this.getFixedOffset();
+  //         window.scrollTo(window.pageXOffset, anchorOffset);
+  //
+  //         // Add the state to history as-per normal anchor links
+  //         if(HISTORY_SUPPORT && pushToHistory) {
+  //           history.pushState({}, document.title, location.pathname + href);
+  //         }
+  //       }
+  //
+  //       return !!match;
+  //     },
+  //
+  //     /**
+  //      * Attempt to scroll to the current location's hash.
+  //      */
+  //     scrollToCurrent: function() {
+  //       this.scrollIfAnchor(window.location.hash);
+  //     },
+  //
+  //     /**
+  //      * If the click event's target was an anchor, fix the scroll position.
+  //      */
+  //     delegateAnchors: function(e) {
+  //       var elem = e.target;
+  //
+  //       if(
+  //         elem.nodeName === 'A' &&
+  //         this.scrollIfAnchor(elem.getAttribute('href'), true)
+  //       ) {
+  //         e.preventDefault();
+  //       }
+  //     }
+  //   };
+  //
+  //   window.addEventListener(
+  //     'DOMContentLoaded', anchorScrolls.init.bind(anchorScrolls)
+  //   );
+  // })(window.document, window.history, window.location);
 
 return stack;})(stacks.stacks_in_4483472_page2);
 stacks.stacks_in_4483473_page2 = {};
@@ -391,32 +498,6 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 	
 }
 
-// function foundry_navigation_bar_sticky() {
-// 	
-// }
-//
-// // Note the window resize event is debounced to prevent flickr of the nav on resize by only calling it after the resize ended.
-// var stacks_in_4483473_page2resizeTimer;
-// $(window).on('resize', function(e) {
-//
-//  clearTimeout(stacks_in_4483473_page2resizeTimer);
-//  stacks_in_4483473_page2resizeTimer = setTimeout(function() {
-//
-//    foundry_navigation_bar_sticky();
-//
-//  }, 250);
-//
-// });
-//
-//
-// $(document).ready(function(){
-//     foundry_navigation_bar();
-// 		foundry_navigation_bar_sticky();
-// });
-//
-// $(window).load(function(){
-//     foundry_navigation_bar_sticky();
-// });
 
 
 
@@ -433,6 +514,9 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
 
 
+
+
+
 });
 
 return stack;})(stacks.stacks_in_4483474_page2);
@@ -441,6 +525,8 @@ stacks.stacks_in_4485373_page2 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4485373_page2 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4485373_page2);
@@ -449,6 +535,8 @@ stacks.stacks_in_4485382_page2 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4485382_page2 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4485382_page2);
@@ -457,22 +545,58 @@ stacks.stacks_in_4485331_page2 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4485331_page2 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4485331_page2);
+stacks.stacks_in_4485337_page2 = {};
+stacks.stacks_in_4485337_page2 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+  
+});
+
+return stack;})(stacks.stacks_in_4485337_page2);
 stacks.stacks_in_4485358_page2 = {};
 stacks.stacks_in_4485358_page2 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4485358_page2 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4485358_page2);
+stacks.stacks_in_4485361_page2 = {};
+stacks.stacks_in_4485361_page2 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+  
+});
+
+return stack;})(stacks.stacks_in_4485361_page2);
 stacks.stacks_in_4483650_page2 = {};
 stacks.stacks_in_4483650_page2 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4483650_page2 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4483650_page2);
+stacks.stacks_in_4483649_page2 = {};
+stacks.stacks_in_4483649_page2 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function() {
+
+	
+
+	
+
+	
+
+	
+
+
+});
+
+return stack;})(stacks.stacks_in_4483649_page2);
