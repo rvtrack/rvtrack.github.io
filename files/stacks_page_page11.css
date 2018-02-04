@@ -6790,6 +6790,84 @@ body {
 
 
 
+#stacks_in_4485382_page11 ul.social_badges_container {
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#stacks_in_4485382_page11 ul.social_badges_container li {
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 2.50px;
+	margin-right: 2.50px;
+}
+
+#stacks_in_4485382_page11 ul.social_badges_container li,
+#stacks_in_4485382_page11 ul.social_badges_container li a,
+#stacks_in_4485382_page11 ul.social_badges_container li a i {
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+}
+
+#stacks_in_4485382_page11 ul.social_badges_container li a {
+	text-align: center;
+	display: block;
+	font-size: 20px;
+}
+
+
+	#stacks_in_4485382_page11 ul.social_badges_container li a {
+		
+	}
+
+
+
+
+li.stacks_in_4485383_page11_individual_badge a,
+li.stacks_in_4485383_page11_individual_badge a:visited {
+	background-color: rgba(2, 115, 217, 1.00);
+	color: rgba(255, 255, 255, 1.00);
+}
+
+li.stacks_in_4485383_page11_individual_badge a:hover,
+li.stacks_in_4485383_page11_individual_badge a:active {
+	background-color: rgba(6, 102, 189, 1.00);
+	color: rgba(255, 255, 255, 1.00);
+}
+
+
+
+li.stacks_in_4485385_page11_individual_badge a,
+li.stacks_in_4485385_page11_individual_badge a:visited {
+	background-color: rgba(2, 115, 217, 1.00);
+	color: rgba(255, 255, 255, 1.00);
+}
+
+li.stacks_in_4485385_page11_individual_badge a:hover,
+li.stacks_in_4485385_page11_individual_badge a:active {
+	background-color: rgba(6, 102, 189, 1.00);
+	color: rgba(255, 255, 255, 1.00);
+}
+
+
+
+li.stacks_in_4485387_page11_individual_badge a,
+li.stacks_in_4485387_page11_individual_badge a:visited {
+	background-color: rgba(2, 115, 217, 1.00);
+	color: rgba(255, 255, 255, 1.00);
+}
+
+li.stacks_in_4485387_page11_individual_badge a:hover,
+li.stacks_in_4485387_page11_individual_badge a:active {
+	background-color: rgba(6, 102, 189, 1.00);
+	color: rgba(255, 255, 255, 1.00);
+}
+
+
+
 
 
 
