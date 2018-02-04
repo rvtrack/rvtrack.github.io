@@ -2726,7 +2726,7 @@ input[type="button"].btn-block {
   display: inline-block; }
   .nav-link:focus,
   .nav-link:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
   .nav-link.disabled {
     color: #818a91; }
     .nav-link.disabled,
@@ -3003,7 +3003,7 @@ input[type="button"].btn-block {
   margin-bottom: 0; }
 
 .card-link:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .card-link + .card-link {
   margin-left: 1.25rem; }
@@ -4839,6 +4839,7 @@ pre.prettyprint {
 /*****************************************/
 /*  Foundry Specific CSS                 */
 /*****************************************/
+/* FONTS */
 /* End Edit Mode */
 /* Site Background Styling Options - Background Image, Color Picker, or determined by theme. */
 body {
@@ -5916,6 +5917,7 @@ body {
 
 /* Background Indicator & Navigation Items */
 
+
 #stacks_in_4483473_page1 nav.navigation_bar ul a.nav_item:hover,
 #stacks_in_4483473_page1 nav.navigation_bar ul a.nav_item.open,
 #stacks_in_4483473_page1 nav.navigation_bar .navigation_container > ul > li.Selected > a.nav_item {
@@ -6128,12 +6130,6 @@ body {
 		border-bottom-right-radius: 0px;
 	}
 
-}
-
-@media (min-width: 48em) {
-	/* iPad and up */
-
-	
 }
 
 @media (min-width: 34em) and (max-width: 47.9em) {
@@ -7002,28 +6998,6 @@ body {
 	margin-bottom: 21px;
 }
 
-@media (max-width: 47.9em) {
-	/*Mobile*/
-	#stacks_in_4484649_page1 img {
-		
-	}
-}
-
-@media (min-width: 48em) and (max-width: 61.9em) {
-	/*Tablet*/
-	#stacks_in_4484649_page1 img {
-		
-	}
-}
-
-@media (min-width: 62em) {
-	/*Desktop*/
-	#stacks_in_4484649_page1 img {
-		%[endif]%
-	}
-}
-
-
 #stacks_in_4484649_page1 figure {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -7712,28 +7686,6 @@ body {
 	display: inline-block;
 	margin-bottom: 21px;
 }
-
-@media (max-width: 47.9em) {
-	/*Mobile*/
-	#stacks_in_4484093_page1 img {
-		
-	}
-}
-
-@media (min-width: 48em) and (max-width: 61.9em) {
-	/*Tablet*/
-	#stacks_in_4484093_page1 img {
-		
-	}
-}
-
-@media (min-width: 62em) {
-	/*Desktop*/
-	#stacks_in_4484093_page1 img {
-		%[endif]%
-	}
-}
-
 
 #stacks_in_4484093_page1 figure {
 	padding: 0 !important;

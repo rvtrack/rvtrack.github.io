@@ -525,8 +525,6 @@ stacks.stacks_in_4485331_page7 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4485331_page7 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
-
-	
 });
 
 return stack;})(stacks.stacks_in_4485331_page7);
@@ -535,8 +533,6 @@ stacks.stacks_in_4483650_page7 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4483650_page7 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
-
-	
 });
 
 return stack;})(stacks.stacks_in_4483650_page7);

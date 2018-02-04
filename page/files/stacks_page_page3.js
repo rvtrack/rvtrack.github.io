@@ -536,8 +536,6 @@ stacks.stacks_in_4484626_page3 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4484626_page3 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
-
-	
 });
 
 return stack;})(stacks.stacks_in_4484626_page3);
@@ -614,8 +612,6 @@ stacks.stacks_in_4485415_page3 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4485415_page3 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
-
-	
 });
 
 return stack;})(stacks.stacks_in_4485415_page3);
@@ -692,8 +688,6 @@ stacks.stacks_in_4483650_page3 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	$('#stacks_in_4483650_page3 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
-
-	
 });
 
 return stack;})(stacks.stacks_in_4483650_page3);
