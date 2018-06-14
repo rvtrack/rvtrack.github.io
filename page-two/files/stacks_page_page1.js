@@ -523,24 +523,43 @@ return stack;})(stacks.stacks_in_4483474_page1);
 stacks.stacks_in_4484626_page1 = {};
 stacks.stacks_in_4484626_page1 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4484626_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	$('.stacks_top').css({'overflow' : 'visible'});
+	$('#stacks_in_4484626_page1 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+
+	// $('#stacks_in_4484626_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
+	// $('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4484626_page1);
+stacks.stacks_in_4484649_page1 = {};
+stacks.stacks_in_4484649_page1 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+  
+});
+
+return stack;})(stacks.stacks_in_4484649_page1);
 stacks.stacks_in_4485055_page1 = {};
 stacks.stacks_in_4485055_page1 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4485055_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	$('.stacks_top').css({'overflow' : 'visible'});
+	$('#stacks_in_4485055_page1 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+
+	// $('#stacks_in_4485055_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
+	// $('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4485055_page1);
 stacks.stacks_in_4483650_page1 = {};
 stacks.stacks_in_4483650_page1 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4483650_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	$('.stacks_top').css({'overflow' : 'visible'});
+	$('#stacks_in_4483650_page1 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+
+	// $('#stacks_in_4483650_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
+	// $('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4483650_page1);
@@ -563,8 +582,19 @@ return stack;})(stacks.stacks_in_4483649_page1);
 stacks.stacks_in_4484070_page1 = {};
 stacks.stacks_in_4484070_page1 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4484070_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	$('.stacks_top').css({'overflow' : 'visible'});
+	$('#stacks_in_4484070_page1 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+
+	// $('#stacks_in_4484070_page1 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
+	// $('.stacks_top').css({'overflow' : 'visible'});
+
+	
 });
 
 return stack;})(stacks.stacks_in_4484070_page1);
+stacks.stacks_in_4484093_page1 = {};
+stacks.stacks_in_4484093_page1 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+  
+});
+
+return stack;})(stacks.stacks_in_4484093_page1);

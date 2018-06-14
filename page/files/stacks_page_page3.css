@@ -1570,7 +1570,7 @@ input[type="checkbox"].disabled {
   border-color: #63bfad; }
 
 .has-success .input-group-addon {
-  color: #63bfad;
+  color: #63bfad !important;
   border-color: #63bfad;
   background-color: #f4faf9; }
 
@@ -1596,7 +1596,7 @@ input[type="checkbox"].disabled {
   border-color: #e5ffa5; }
 
 .has-warning .input-group-addon {
-  color: #e5ffa5;
+  color: #e5ffa5 !important;
   border-color: #e5ffa5;
   background-color: white; }
 
@@ -1622,7 +1622,7 @@ input[type="checkbox"].disabled {
   border-color: #fb0043; }
 
 .has-danger .input-group-addon {
-  color: #fb0043;
+  color: #fb0043 !important;
   border-color: #fb0043;
   background-color: #ffc8d7; }
 
@@ -2724,7 +2724,7 @@ input[type="button"].btn-block {
   display: inline-block; }
   .nav-link:focus,
   .nav-link:hover {
-    text-decoration: none; }
+    text-decoration: underline; }
   .nav-link.disabled {
     color: #818a91; }
     .nav-link.disabled,
@@ -3001,7 +3001,7 @@ input[type="button"].btn-block {
   margin-bottom: 0; }
 
 .card-link:hover {
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .card-link + .card-link {
   margin-left: 1.25rem; }
@@ -3904,7 +3904,7 @@ button.close {
   .modal-sm {
     width: 300px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .modal-lg {
     width: 900px; } }
 
@@ -4834,10 +4834,12 @@ ul.bulleted_list li i {
 pre.prettyprint {
   border-radius: 4px; }
 
+.hi-content-wrap {
+  line-height: 1.5; }
+
 /*****************************************/
 /*  Foundry Specific CSS                 */
 /*****************************************/
-/* FONTS */
 /* End Edit Mode */
 /* Site Background Styling Options - Background Image, Color Picker, or determined by theme. */
 body {
@@ -5915,7 +5917,6 @@ body {
 
 /* Background Indicator & Navigation Items */
 
-
 #stacks_in_4483473_page3 nav.navigation_bar ul a.nav_item:hover,
 #stacks_in_4483473_page3 nav.navigation_bar ul a.nav_item.open,
 #stacks_in_4483473_page3 nav.navigation_bar .navigation_container > ul > li.Selected > a.nav_item {
@@ -6124,6 +6125,12 @@ body {
 		border-bottom-right-radius: 0px;
 	}
 
+}
+
+@media (min-width: 48em) {
+	/* iPad and up */
+
+	
 }
 
 @media (min-width: 34em) and (max-width: 47.9em) {
@@ -6993,7 +7000,7 @@ body {
 /*!
  * baguetteBox.js
  * @author  feimosi
- * @version 1.4.2
+ * @version 1.9.1
  * @url https://github.com/feimosi/baguetteBox.js
  */
 #baguetteBox-overlay {
@@ -7006,10 +7013,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1000000;
-  background-color: #222;
-  background-color: rgba(0, 0, 0, 0.80);
-  -webkit-transition: opacity 0.5s ease;
-          transition: opacity 0.5s ease; }
+	background-color: rgba(0, 0, 0, 0.80);
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease; }
   #baguetteBox-overlay.visible {
     opacity: 1; }
   #baguetteBox-overlay .full-image {
@@ -7029,8 +7035,16 @@ body {
       max-height: 100%;
       max-width: 100%;
       vertical-align: middle;
-      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-           box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+         -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+              box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+							user-drag: none;
+						user-select: none;
+						-moz-user-select: none;
+						-webkit-user-drag: none;
+						-webkit-user-select: none;
+						-ms-user-select: none;
+		}
     #baguetteBox-overlay .full-image figcaption {
       display: block;
       position: absolute;
@@ -7050,6 +7064,25 @@ body {
       width: 1px;
       margin-right: -1px; }
 
+			.baguetteBox-button#close-button {
+		    top: 20px;
+		    right: 2%;
+		    right: calc(2% + 6px);
+		    width: 40px;
+		    height: 40px;
+		}
+
+			.baguetteBox-button#close-button svg {
+				display: none;
+			}
+
+			.baguetteBox-button#close-button::after {
+				font-family: "FontAwesome";
+				content: '\f00d';
+				line-height: 40px;
+				font-size: 20px;
+			}
+
 #baguetteBox-slider {
   position: absolute;
   left: 0;
@@ -7057,15 +7090,16 @@ body {
   height: 100%;
   width: 100%;
   white-space: nowrap;
-  -webkit-transition: left 0.4s ease, -webkit-transform 0.4s ease;
-          transition: left 0.4s ease, -moz-transform 0.4s ease;
-          transition: left 0.4s ease, transform 0.4s ease; }
+  -webkit-transition: left .4s ease, -webkit-transform .4s ease;
+  transition: left .4s ease, -webkit-transform .4s ease;
+  transition: left .4s ease, transform .4s ease;
+  transition: left .4s ease, transform .4s ease, -webkit-transform .4s ease, -moz-transform .4s ease; }
   #baguetteBox-slider.bounce-from-right {
-    -webkit-animation: bounceFromRight 0.4s ease-out;
-            animation: bounceFromRight 0.4s ease-out; }
+    -webkit-animation: bounceFromRight .4s ease-out;
+            animation: bounceFromRight .4s ease-out; }
   #baguetteBox-slider.bounce-from-left {
-    -webkit-animation: bounceFromLeft 0.4s ease-out;
-            animation: bounceFromLeft 0.4s ease-out; }
+    -webkit-animation: bounceFromLeft .4s ease-out;
+            animation: bounceFromLeft .4s ease-out; }
 
 @-webkit-keyframes bounceFromRight {
   0% {
@@ -7103,7 +7137,9 @@ body {
   top: 50%;
   top: calc(50% - 30px);
   width: 44px;
-  height: 60px; }
+  height: 60px;
+	outline: none;
+}
 
 .baguetteBox-button {
   position: absolute;
@@ -7116,14 +7152,16 @@ body {
        border-radius: 15%;
   background-color: #323232;
   background-color: rgba(50, 50, 50, 0.5);
-  color: #fff;
+  color: #ddd;
   font: 1.6em sans-serif;
-  -webkit-transition: background-color 0.4s ease;
-          transition: background-color 0.4s ease; }
-  .baguetteBox-button:hover {
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease; }
+  .baguetteBox-button:focus, .baguetteBox-button:hover {
     background-color: rgba(50, 50, 50, 0.9); }
   .baguetteBox-button#next-button {
-    right: 2%; }
+    right: 2%;
+		outline: none;
+	}
   .baguetteBox-button#previous-button {
     left: 2%; }
   .baguetteBox-button#close-button {
@@ -7131,26 +7169,20 @@ body {
     right: 2%;
     right: calc(2% + 6px);
     width: 40px;
-    height: 40px; }
-	.baguetteBox-button#close-button svg {
-		display: none;
-	}
-	.baguetteBox-button#close-button::after {
-		font-family: "FontAwesome";
-		content: '\f00d';
-		line-height: 40px;
-		font-size: 20px;
+    height: 40px;
+		outline: none;
 	}
   .baguetteBox-button svg {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+	}
 
 /*
     Preloader
     Borrowed from http://tobiasahlin.com/spinkit/
 */
-.spinner {
+.baguetteBox-spinner {
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -7160,7 +7192,8 @@ body {
   margin-top: -20px;
   margin-left: -20px; }
 
-.double-bounce1, .double-bounce2 {
+.baguetteBox-double-bounce1,
+.baguetteBox-double-bounce2 {
   width: 100%;
   height: 100%;
   -moz-border-radius: 50%;
@@ -7173,9 +7206,9 @@ body {
   -webkit-animation: bounce 2s infinite ease-in-out;
           animation: bounce 2s infinite ease-in-out; }
 
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-          animation-delay: -1.0s; }
+.baguetteBox-double-bounce2 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; }
 
 @-webkit-keyframes bounce {
   0%, 100% {
@@ -7408,7 +7441,7 @@ body {
 /*!
  * baguetteBox.js
  * @author  feimosi
- * @version 1.4.2
+ * @version 1.9.1
  * @url https://github.com/feimosi/baguetteBox.js
  */
 #baguetteBox-overlay {
@@ -7421,10 +7454,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1000000;
-  background-color: #222;
-  background-color: rgba(0, 0, 0, 0.80);
-  -webkit-transition: opacity 0.5s ease;
-          transition: opacity 0.5s ease; }
+	background-color: rgba(0, 0, 0, 0.80);
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease; }
   #baguetteBox-overlay.visible {
     opacity: 1; }
   #baguetteBox-overlay .full-image {
@@ -7444,8 +7476,16 @@ body {
       max-height: 100%;
       max-width: 100%;
       vertical-align: middle;
-      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-           box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+         -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+              box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+							user-drag: none;
+						user-select: none;
+						-moz-user-select: none;
+						-webkit-user-drag: none;
+						-webkit-user-select: none;
+						-ms-user-select: none;
+		}
     #baguetteBox-overlay .full-image figcaption {
       display: block;
       position: absolute;
@@ -7465,6 +7505,25 @@ body {
       width: 1px;
       margin-right: -1px; }
 
+			.baguetteBox-button#close-button {
+		    top: 20px;
+		    right: 2%;
+		    right: calc(2% + 6px);
+		    width: 40px;
+		    height: 40px;
+		}
+
+			.baguetteBox-button#close-button svg {
+				display: none;
+			}
+
+			.baguetteBox-button#close-button::after {
+				font-family: "FontAwesome";
+				content: '\f00d';
+				line-height: 40px;
+				font-size: 20px;
+			}
+
 #baguetteBox-slider {
   position: absolute;
   left: 0;
@@ -7472,15 +7531,16 @@ body {
   height: 100%;
   width: 100%;
   white-space: nowrap;
-  -webkit-transition: left 0.4s ease, -webkit-transform 0.4s ease;
-          transition: left 0.4s ease, -moz-transform 0.4s ease;
-          transition: left 0.4s ease, transform 0.4s ease; }
+  -webkit-transition: left .4s ease, -webkit-transform .4s ease;
+  transition: left .4s ease, -webkit-transform .4s ease;
+  transition: left .4s ease, transform .4s ease;
+  transition: left .4s ease, transform .4s ease, -webkit-transform .4s ease, -moz-transform .4s ease; }
   #baguetteBox-slider.bounce-from-right {
-    -webkit-animation: bounceFromRight 0.4s ease-out;
-            animation: bounceFromRight 0.4s ease-out; }
+    -webkit-animation: bounceFromRight .4s ease-out;
+            animation: bounceFromRight .4s ease-out; }
   #baguetteBox-slider.bounce-from-left {
-    -webkit-animation: bounceFromLeft 0.4s ease-out;
-            animation: bounceFromLeft 0.4s ease-out; }
+    -webkit-animation: bounceFromLeft .4s ease-out;
+            animation: bounceFromLeft .4s ease-out; }
 
 @-webkit-keyframes bounceFromRight {
   0% {
@@ -7518,7 +7578,9 @@ body {
   top: 50%;
   top: calc(50% - 30px);
   width: 44px;
-  height: 60px; }
+  height: 60px;
+	outline: none;
+}
 
 .baguetteBox-button {
   position: absolute;
@@ -7531,14 +7593,16 @@ body {
        border-radius: 15%;
   background-color: #323232;
   background-color: rgba(50, 50, 50, 0.5);
-  color: #fff;
+  color: #ddd;
   font: 1.6em sans-serif;
-  -webkit-transition: background-color 0.4s ease;
-          transition: background-color 0.4s ease; }
-  .baguetteBox-button:hover {
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease; }
+  .baguetteBox-button:focus, .baguetteBox-button:hover {
     background-color: rgba(50, 50, 50, 0.9); }
   .baguetteBox-button#next-button {
-    right: 2%; }
+    right: 2%;
+		outline: none;
+	}
   .baguetteBox-button#previous-button {
     left: 2%; }
   .baguetteBox-button#close-button {
@@ -7546,26 +7610,20 @@ body {
     right: 2%;
     right: calc(2% + 6px);
     width: 40px;
-    height: 40px; }
-	.baguetteBox-button#close-button svg {
-		display: none;
-	}
-	.baguetteBox-button#close-button::after {
-		font-family: "FontAwesome";
-		content: '\f00d';
-		line-height: 40px;
-		font-size: 20px;
+    height: 40px;
+		outline: none;
 	}
   .baguetteBox-button svg {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+	}
 
 /*
     Preloader
     Borrowed from http://tobiasahlin.com/spinkit/
 */
-.spinner {
+.baguetteBox-spinner {
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -7575,7 +7633,8 @@ body {
   margin-top: -20px;
   margin-left: -20px; }
 
-.double-bounce1, .double-bounce2 {
+.baguetteBox-double-bounce1,
+.baguetteBox-double-bounce2 {
   width: 100%;
   height: 100%;
   -moz-border-radius: 50%;
@@ -7588,9 +7647,9 @@ body {
   -webkit-animation: bounce 2s infinite ease-in-out;
           animation: bounce 2s infinite ease-in-out; }
 
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-          animation-delay: -1.0s; }
+.baguetteBox-double-bounce2 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; }
 
 @-webkit-keyframes bounce {
   0%, 100% {

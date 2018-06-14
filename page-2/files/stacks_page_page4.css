@@ -1570,7 +1570,7 @@ input[type="checkbox"].disabled {
   border-color: #63bfad; }
 
 .has-success .input-group-addon {
-  color: #63bfad;
+  color: #63bfad !important;
   border-color: #63bfad;
   background-color: #f4faf9; }
 
@@ -1596,7 +1596,7 @@ input[type="checkbox"].disabled {
   border-color: #e5ffa5; }
 
 .has-warning .input-group-addon {
-  color: #e5ffa5;
+  color: #e5ffa5 !important;
   border-color: #e5ffa5;
   background-color: white; }
 
@@ -1622,7 +1622,7 @@ input[type="checkbox"].disabled {
   border-color: #fb0043; }
 
 .has-danger .input-group-addon {
-  color: #fb0043;
+  color: #fb0043 !important;
   border-color: #fb0043;
   background-color: #ffc8d7; }
 
@@ -2724,7 +2724,7 @@ input[type="button"].btn-block {
   display: inline-block; }
   .nav-link:focus,
   .nav-link:hover {
-    text-decoration: none; }
+    text-decoration: underline; }
   .nav-link.disabled {
     color: #818a91; }
     .nav-link.disabled,
@@ -3001,7 +3001,7 @@ input[type="button"].btn-block {
   margin-bottom: 0; }
 
 .card-link:hover {
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .card-link + .card-link {
   margin-left: 1.25rem; }
@@ -3904,7 +3904,7 @@ button.close {
   .modal-sm {
     width: 300px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .modal-lg {
     width: 900px; } }
 
@@ -4834,10 +4834,12 @@ ul.bulleted_list li i {
 pre.prettyprint {
   border-radius: 4px; }
 
+.hi-content-wrap {
+  line-height: 1.5; }
+
 /*****************************************/
 /*  Foundry Specific CSS                 */
 /*****************************************/
-/* FONTS */
 /* End Edit Mode */
 /* Site Background Styling Options - Background Image, Color Picker, or determined by theme. */
 body {
@@ -5915,7 +5917,6 @@ body {
 
 /* Background Indicator & Navigation Items */
 
-
 #stacks_in_4483473_page4 nav.navigation_bar ul a.nav_item:hover,
 #stacks_in_4483473_page4 nav.navigation_bar ul a.nav_item.open,
 #stacks_in_4483473_page4 nav.navigation_bar .navigation_container > ul > li.Selected > a.nav_item {
@@ -6124,6 +6125,12 @@ body {
 		border-bottom-right-radius: 0px;
 	}
 
+}
+
+@media (min-width: 48em) {
+	/* iPad and up */
+
+	
 }
 
 @media (min-width: 34em) and (max-width: 47.9em) {
