@@ -6498,14 +6498,14 @@ body {
 		/* Desktop */
 		@media (min-width: 62em) and (max-width: 74.9em) {
 			#stacks_in_4483474_page11 .banner {
-				height: 400px;
+				height: 300px;
 			}
 		}
 
 		/* Wide Screens */
 		@media (min-width: 75em) {
 			#stacks_in_4483474_page11 .banner {
-				height: 600px;
+				height: 300px;
 			}
 		}
 	
