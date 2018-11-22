@@ -494,11 +494,9 @@ return stack;})(stacks.stacks_in_4483473_page0);
 stacks.stacks_in_4483526_page0 = {};
 stacks.stacks_in_4483526_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4483526_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4483526_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4483526_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
@@ -506,11 +504,9 @@ return stack;})(stacks.stacks_in_4483526_page0);
 stacks.stacks_in_4483558_page0 = {};
 stacks.stacks_in_4483558_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4483558_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4483558_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4483558_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
@@ -518,11 +514,9 @@ return stack;})(stacks.stacks_in_4483558_page0);
 stacks.stacks_in_4483716_page0 = {};
 stacks.stacks_in_4483716_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4483716_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4483716_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4483716_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
@@ -530,11 +524,9 @@ return stack;})(stacks.stacks_in_4483716_page0);
 stacks.stacks_in_4484031_page0 = {};
 stacks.stacks_in_4484031_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4484031_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4484031_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4484031_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
@@ -542,11 +534,9 @@ return stack;})(stacks.stacks_in_4484031_page0);
 stacks.stacks_in_4484194_page0 = {};
 stacks.stacks_in_4484194_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4484194_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4484194_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4484194_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
@@ -554,11 +544,9 @@ return stack;})(stacks.stacks_in_4484194_page0);
 stacks.stacks_in_4483650_page0 = {};
 stacks.stacks_in_4483650_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4483650_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4483650_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4483650_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
@@ -582,11 +570,9 @@ return stack;})(stacks.stacks_in_4483649_page0);
 stacks.stacks_in_4484070_page0 = {};
 stacks.stacks_in_4484070_page0 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	$('#stacks_in_4484070_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-
-	// $('#stacks_in_4484070_page0 > .container').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
-	// $('.stacks_top').css({'overflow' : 'visible'});
-
+	
+		$('#stacks_in_4484070_page0 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
