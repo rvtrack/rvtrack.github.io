@@ -530,13 +530,14 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
 
 
-
-});
-
-
-$(window).load(function(){
+	// Load parallax effect
 	
+
 });
+
+
+// $(window).load(function(){
+// });
 
 return stack;})(stacks.stacks_in_4483474_page7);
 stacks.stacks_in_4485331_page7 = {};
