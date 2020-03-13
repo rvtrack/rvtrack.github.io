@@ -540,6 +540,24 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 // });
 
 return stack;})(stacks.stacks_in_4483474_page10);
+stacks.stacks_in_4485382_page10 = {};
+stacks.stacks_in_4485382_page10 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+	
+		$('#stacks_in_4485382_page10 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
+	
+});
+
+return stack;})(stacks.stacks_in_4485382_page10);
+stacks.stacks_in_4485384_page10 = {};
+stacks.stacks_in_4485384_page10 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function() {
+  $('#stacks_in_4485384_page10 .alert a').addClass('alert-link');
+});
+
+
+return stack;})(stacks.stacks_in_4485384_page10);
 stacks.stacks_in_4485373_page10 = {};
 stacks.stacks_in_4485373_page10 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
@@ -567,23 +585,6 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 });
 
 return stack;})(stacks.stacks_in_4485337_page10);
-stacks.stacks_in_4485235_page10 = {};
-stacks.stacks_in_4485235_page10 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	
-		$('#stacks_in_4485235_page10 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-		$('.stacks_top').css({'overflow' : 'visible'});
-	
-});
-
-return stack;})(stacks.stacks_in_4485235_page10);
-stacks.stacks_in_4485298_page10 = {};
-stacks.stacks_in_4485298_page10 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-  
-});
-
-return stack;})(stacks.stacks_in_4485298_page10);
 stacks.stacks_in_4485358_page10 = {};
 stacks.stacks_in_4485358_page10 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
@@ -594,13 +595,6 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 });
 
 return stack;})(stacks.stacks_in_4485358_page10);
-stacks.stacks_in_4485361_page10 = {};
-stacks.stacks_in_4485361_page10 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-  
-});
-
-return stack;})(stacks.stacks_in_4485361_page10);
 stacks.stacks_in_4483650_page10 = {};
 stacks.stacks_in_4483650_page10 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
