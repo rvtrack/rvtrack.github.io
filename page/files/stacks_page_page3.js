@@ -348,8 +348,8 @@ var jQuery = stacks.jQuery;var $ = jQuery;// Sticky Plugin v1.0.4 for jQuery
 }));
 
 return stack;})(stacks.com_elixir_stacks_foundryNavigationBar);
-stacks.stacks_in_4483472_page3 = {};
-stacks.stacks_in_4483472_page3 = (function(stack) {
+stacks.stacks_in_4483472 = {};
+stacks.stacks_in_4483472 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;// Set Language for Document
 document.documentElement.lang = "en";
 
@@ -459,27 +459,27 @@ $.fn.elementRealHeight = function () {
   //   );
   // })(window.document, window.history, window.location);
 
-return stack;})(stacks.stacks_in_4483472_page3);
-stacks.stacks_in_4483473_page3 = {};
-stacks.stacks_in_4483473_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4483472);
+stacks.stacks_in_4483473 = {};
+stacks.stacks_in_4483473 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 	// Removes overflow hidden so dropdowns can show as they should.
-	$('#stacks_in_4483473_page3 .navigation_bar ').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
+	$('#stacks_in_4483473 .navigation_bar ').parentsUntil('.stacks_top').css({'overflow' : 'visible'});
 	$('.stacks_top').css({'overflow' : 'visible'});
 
 	// Unwraps the link from dividers and small subheaders
-	$('#stacks_in_4483473_page3 .navigation_bar div.nav_divider, #stacks_in_4483473_page3 .navigation_bar .small_hdr').unwrap();
+	$('#stacks_in_4483473 .navigation_bar div.nav_divider, #stacks_in_4483473 .navigation_bar .small_hdr').unwrap();
 
 
 
 	// Removes href attributes from parent navigation links.
 	// This could be offered as an option possibly.
-	$('#stacks_in_4483473_page3 .navigation_bar .navigation_container > ul > li > a.parent').removeAttr("href").addClass('closed');
+	$('#stacks_in_4483473 .navigation_bar .navigation_container > ul > li > a.parent').removeAttr("href").addClass('closed');
 
 	//
 	// Handles displaying drop down navigation.
 	//
-	$('#stacks_in_4483473_page3 .navigation_bar .navigation_container ul').find("li").each(function() {
+	$('#stacks_in_4483473 .navigation_bar .navigation_container ul').find("li").each(function() {
 			if ($(this).find("ul:first").length > 0) {
 
 					$(this).click(function() {
@@ -488,14 +488,14 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 							//
 							// Close all navigation drop downs when another is opened.
 							//
-							$("#stacks_in_4483473_page3 .navigation_bar .navigation_container ul li").removeClass('clicked');
+							$("#stacks_in_4483473 .navigation_bar .navigation_container ul li").removeClass('clicked');
 
 							$(this).addClass('clicked');
 
-							$("#stacks_in_4483473_page3 .navigation_bar .navigation_container ul li:not(.clicked) a.open").parent().find('ul:first').stop(true, true).slideUp(200);
+							$("#stacks_in_4483473 .navigation_bar .navigation_container ul li:not(.clicked) a.open").parent().find('ul:first').stop(true, true).slideUp(200);
 
 
-							$("#stacks_in_4483473_page3 .navigation_bar .navigation_container ul li").find("> a").addClass('closed').removeClass('open');
+							$("#stacks_in_4483473 .navigation_bar .navigation_container ul li").find("> a").addClass('closed').removeClass('open');
 							
 
 							//
@@ -512,8 +512,8 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 	//
 	// Handles showing and hiding the navigation when the navigation toggle is clicked or tapped.
 	//
-	$('#stacks_in_4483473_page3_mobile_navigation_toggle').click(function(){
-		$('#stacks_in_4483473_page3 .navigation_bar .navigation_container > ul').slideToggle(175, function(){});
+	$('#stacks_in_4483473_mobile_navigation_toggle').click(function(){
+		$('#stacks_in_4483473 .navigation_bar .navigation_container > ul').slideToggle(175, function(){});
 	});
 
 	//
@@ -531,9 +531,9 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 
 
 
-return stack;})(stacks.stacks_in_4483473_page3);
-stacks.stacks_in_4483474_page3 = {};
-stacks.stacks_in_4483474_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4483473);
+stacks.stacks_in_4483474 = {};
+stacks.stacks_in_4483474 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
 
@@ -550,22 +550,22 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 // $(window).load(function(){
 // });
 
-return stack;})(stacks.stacks_in_4483474_page3);
-stacks.stacks_in_4484626_page3 = {};
-stacks.stacks_in_4484626_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4483474);
+stacks.stacks_in_4484626 = {};
+stacks.stacks_in_4484626 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	
-		$('#stacks_in_4484626_page3 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('#stacks_in_4484626 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
 		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
-return stack;})(stacks.stacks_in_4484626_page3);
-stacks.stacks_in_4485395_page3 = {};
-stacks.stacks_in_4485395_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4484626);
+stacks.stacks_in_4485395 = {};
+stacks.stacks_in_4485395 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
-	var gal_col = $('#stacks_in_4485395_page3 .gallery_column');
+	var gal_col = $('#stacks_in_4485395 .gallery_column');
 
 	// LARGE
 	
@@ -607,7 +607,7 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	
 
 
-	baguetteBox.run('#stacks_in_4485395_page3 .gallery_wrapper', {
+	baguetteBox.run('#stacks_in_4485395 .gallery_wrapper', {
 		  captions: true,       // true|false|callback(element) - Display image captions
 		  buttons: 'auto',      // 'auto'|true|false - Display buttons
 		  async: false,         // true|false - Load files asynchronously
@@ -620,22 +620,22 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
 });
 
-return stack;})(stacks.stacks_in_4485395_page3);
-stacks.stacks_in_4485415_page3 = {};
-stacks.stacks_in_4485415_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4485395);
+stacks.stacks_in_4485415 = {};
+stacks.stacks_in_4485415 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	
-		$('#stacks_in_4485415_page3 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('#stacks_in_4485415 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
 		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
-return stack;})(stacks.stacks_in_4485415_page3);
-stacks.stacks_in_4485409_page3 = {};
-stacks.stacks_in_4485409_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4485415);
+stacks.stacks_in_4485409 = {};
+stacks.stacks_in_4485409 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
-	var gal_col = $('#stacks_in_4485409_page3 .gallery_column');
+	var gal_col = $('#stacks_in_4485409 .gallery_column');
 
 	// LARGE
 	
@@ -677,7 +677,7 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	
 
 
-	baguetteBox.run('#stacks_in_4485409_page3 .gallery_wrapper', {
+	baguetteBox.run('#stacks_in_4485409 .gallery_wrapper', {
 		  captions: true,       // true|false|callback(element) - Display image captions
 		  buttons: 'auto',      // 'auto'|true|false - Display buttons
 		  async: false,         // true|false - Load files asynchronously
@@ -690,19 +690,19 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 
 });
 
-return stack;})(stacks.stacks_in_4485409_page3);
-stacks.stacks_in_4483650_page3 = {};
-stacks.stacks_in_4483650_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4485409);
+stacks.stacks_in_4483650 = {};
+stacks.stacks_in_4483650 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 	
-		$('#stacks_in_4483650_page3 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('#stacks_in_4483650 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
 		$('.stacks_top').css({'overflow' : 'visible'});
 	
 });
 
-return stack;})(stacks.stacks_in_4483650_page3);
-stacks.stacks_in_4483649_page3 = {};
-stacks.stacks_in_4483649_page3 = (function(stack) {
+return stack;})(stacks.stacks_in_4483650);
+stacks.stacks_in_4483649 = {};
+stacks.stacks_in_4483649 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function() {
 
 	
@@ -716,4 +716,4 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function() {
 
 });
 
-return stack;})(stacks.stacks_in_4483649_page3);
+return stack;})(stacks.stacks_in_4483649);
