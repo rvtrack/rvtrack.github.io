@@ -691,6 +691,76 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 });
 
 return stack;})(stacks.stacks_in_4485409);
+stacks.stacks_in_4485418 = {};
+stacks.stacks_in_4485418 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+	
+		$('#stacks_in_4485418 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
+	
+});
+
+return stack;})(stacks.stacks_in_4485418);
+stacks.stacks_in_4485426 = {};
+stacks.stacks_in_4485426 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+
+	var gal_col = $('#stacks_in_4485426 .gallery_column');
+
+	// LARGE
+	
+
+	
+		gal_col.addClass('col-lg-3');
+	
+
+	
+
+	
+
+
+	// MEDIUM
+	
+
+	
+
+	
+		gal_col.addClass('col-md-4');
+	
+
+	
+
+	
+
+
+	// SMALL
+	
+
+	
+
+	
+
+	
+
+	
+		gal_col.addClass('col-xs-12');
+	
+
+
+	baguetteBox.run('#stacks_in_4485426 .gallery_wrapper', {
+		  captions: true,       // true|false|callback(element) - Display image captions
+		  buttons: 'auto',      // 'auto'|true|false - Display buttons
+		  async: false,         // true|false - Load files asynchronously
+		  preload: 2,           // [number] - How many files should be preloaded from current image
+		  animation: 'slideIn', // 'slideIn'|'fadeIn'|false - Animation type
+			overlayBackgroundColor: 'rgba(0, 0, 0, 0.80)',
+			fullScreen: false,
+	});
+
+
+});
+
+return stack;})(stacks.stacks_in_4485426);
 stacks.stacks_in_4483650 = {};
 stacks.stacks_in_4483650 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
