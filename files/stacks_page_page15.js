@@ -540,6 +540,24 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 // });
 
 return stack;})(stacks.stacks_in_4483474);
+stacks.stacks_in_4485382 = {};
+stacks.stacks_in_4485382 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+	
+		$('#stacks_in_4485382 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
+	
+});
+
+return stack;})(stacks.stacks_in_4485382);
+stacks.stacks_in_4485384 = {};
+stacks.stacks_in_4485384 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function() {
+  $('#stacks_in_4485384 .alert a').addClass('alert-link');
+});
+
+
+return stack;})(stacks.stacks_in_4485384);
 stacks.stacks_in_4485373 = {};
 stacks.stacks_in_4485373 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
@@ -567,23 +585,6 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 });
 
 return stack;})(stacks.stacks_in_4485337);
-stacks.stacks_in_4485382 = {};
-stacks.stacks_in_4485382 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	
-		$('#stacks_in_4485382 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-		$('.stacks_top').css({'overflow' : 'visible'});
-	
-});
-
-return stack;})(stacks.stacks_in_4485382);
-stacks.stacks_in_4485385 = {};
-stacks.stacks_in_4485385 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-  
-});
-
-return stack;})(stacks.stacks_in_4485385);
 stacks.stacks_in_4483650 = {};
 stacks.stacks_in_4483650 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
