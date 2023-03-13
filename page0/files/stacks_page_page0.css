@@ -265,6 +265,9 @@ body {
   color: #373a3c;
   background-color: #fff; }
 
+.paragraph {
+  color: #373a3c; }
+
 [tabindex="-1"]:focus {
   outline: none !important; }
 

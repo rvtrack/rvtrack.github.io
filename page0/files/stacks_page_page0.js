@@ -433,7 +433,8 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 
 	// Removes href attributes from parent navigation links.
 	// This could be offered as an option possibly.
-	$('#stacks_in_4483473 .navigation_bar .navigation_container > ul > li > a.parent').removeAttr("href").addClass('closed');
+	// $('#stacks_in_4483473 .navigation_bar .navigation_container > ul > li > a.parent').removeAttr("href").addClass('closed');
+	$('#stacks_in_4483473 .navigation_bar .navigation_container > ul > li > a.parent').attr("href", "#").addClass('closed');
 
 	//
 	// Handles displaying drop down navigation.
@@ -441,7 +442,9 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 	$('#stacks_in_4483473 .navigation_bar .navigation_container ul').find("li").each(function() {
 			if ($(this).find("ul:first").length > 0) {
 
-					$(this).click(function() {
+					$(this).find('a.parent').click(function() {
+
+						event.preventDefault();
 
 							
 							//
@@ -449,7 +452,7 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 							//
 							$("#stacks_in_4483473 .navigation_bar .navigation_container ul li").removeClass('clicked');
 
-							$(this).addClass('clicked');
+							$(this).parent().addClass('clicked');
 
 							$("#stacks_in_4483473 .navigation_bar .navigation_container ul li:not(.clicked) a.open").parent().find('ul:first').stop(true, true).slideUp(200);
 
@@ -460,9 +463,9 @@ var jQuery = stacks.jQuery;var $ = jQuery;function foundry_navigation_bar() {
 							//
 							// Show child-level menu items
 							//
-							$(this).find("ul:first").stop(true, true).animate({height: 'toggle' , opacity: 'toggle'}, 200);
+							$(this).parent().find("ul:first").stop(true, true).animate({height: 'toggle' , opacity: 'toggle'}, 200);
 
-							$(this).find("> a").toggleClass('closed').toggleClass('open');
+							$(this).parent().find("> a").toggleClass('closed').toggleClass('open');
 					});
 			}
 	});

@@ -286,6 +286,9 @@ body {
   color: #373a3c;
   background-color: #fff; }
 
+.paragraph {
+  color: #373a3c; }
+
 [tabindex="-1"]:focus {
   outline: none !important; }
 
@@ -6179,7 +6182,7 @@ body {
 
 
 
-
+/* ADAM */
 
 	#stacks_in_4483474 .banner {
 		background: url() no-repeat center center;
@@ -6262,6 +6265,8 @@ body {
 		bottom: 70px;
 	}
 }
+
+
 
 #stacks_in_4483474 {
     background-image: url("F004BD3D-64E9-4457-A426-9001CDF8FB65.jpg");

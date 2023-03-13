@@ -286,6 +286,9 @@ body {
   color: #373a3c;
   background-color: #fff; }
 
+.paragraph {
+  color: #373a3c; }
+
 [tabindex="-1"]:focus {
   outline: none !important; }
 
@@ -6179,7 +6182,7 @@ body {
 
 
 
-
+/* ADAM */
 
 	#stacks_in_4483474 .banner {
 		background: url(../files/banner_image-4483474.jpg) no-repeat center center;
@@ -6262,6 +6265,8 @@ body {
 		bottom: 70px;
 	}
 }
+
+
 
 
 
@@ -7000,286 +7005,6 @@ body {
 /* Option for removing base margin on paragraphs */
 #stacks_in_4485423 p,
 #stacks_in_4485423 {
-	
-	
-}
-
-
-
-
-
-
-	#stacks_in_4485382 > .container {
-		max-width: 1140px;
-	}
-
-
-
-
-
-
-
-
-
-
-	#stacks_in_4485382 > .container {
-		border-radius: 0px;
-	}
-
-	
-
-
-#stacks_in_4485382 {
-	background-color: rgba(36, 123, 168, 1.00);
-}
-
-
-
-
-@media only screen {
-   
-    #stacks_in_4485383 {
-      margin: 0px;
-    }
-
-    #stacks_in_4485383 {
-      padding: 0px;
-    }
-
-    
-      #stacks_in_4485383 {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-
-    
-  
-
-
- 
-    #stacks_in_4485383 {
-      margin: 0px;
-    }
-
-    #stacks_in_4485383 {
-      padding: 0px;
-    }
-
-    
-      #stacks_in_4485383 {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-
-    
- 
-
-
- 
-    #stacks_in_4485383 {
-      margin: 0px;
-    }
-
-    #stacks_in_4485383 {
-      padding: 0px;
-    }
-
-
-    
-      #stacks_in_4485383 {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-
-    
- 
-}
-
-
-@media only screen and (max-width: 61.9em) {
-   
-    #stacks_in_4485383 {
-      margin: 0px;
-    }
-
-    #stacks_in_4485383 {
-      padding: 0px;
-    }
-
-
-    
-      #stacks_in_4485383 {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-
-    
-  
-
-
- 
-    #stacks_in_4485383 {
-      margin: 0px;
-    }
-
-    #stacks_in_4485383 {
-      padding: 0px;
-    }
-
-
-    
-      #stacks_in_4485383 {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-
-    
- 
-}
-
-
-@media only screen and (max-width: 47.9em){
-   
-    #stacks_in_4485383 {
-      margin: 0px;
-    }
-
-    #stacks_in_4485383 {
-      padding: 0px;
-    }
-
-
-    
-      #stacks_in_4485383 {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-
-    
-  
-
-}
-
-
-
-/* CSS for removing gutters if option is enabled. */
-#stacks_in_4485384 .row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-#stacks_in_4485384 .row.no-gutters > [class^="col-"],
-#stacks_in_4485384 .row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-
-@media (max-width: 47.9em) {
-	/* iPhone */
-	#stacks_in_4485384 .foundry_column {
-		margin-bottom: 20px;
-	}
-}
-
-@media (min-width: 48em) and (max-width: 61.9em) {
-	/* iPad */
-	#stacks_in_4485384 .foundry_column {
-		margin-bottom: 0px;
-	}
-}
-
-@media (min-width: 62em) {
-	/* Desktop */
-	#stacks_in_4485384 .foundry_column {
-		margin-bottom: 0px;
-	}
-}
-
-
-
-
-
-
-#stacks_in_4485385 img {
-	
-	
-	display: inline-block;
-	margin-bottom: 21px;
-}
-
-@media (max-width: 47.9em) {
-	/*Mobile*/
-	#stacks_in_4485385 img {
-		
-	}
-}
-
-@media (min-width: 48em) and (max-width: 61.9em) {
-	/*Tablet*/
-	#stacks_in_4485385 img {
-		
-	}
-}
-
-@media (min-width: 62em) {
-	/*Desktop*/
-	#stacks_in_4485385 img {
-		%[endif]%
-	}
-}
-
-
-#stacks_in_4485385 figure {
-	padding: 0 !important;
-	margin: 0 !important;
-	overflow: hidden;
-}
-
-
-#stacks_in_4485387 h3 {
-	
-	font-style: normal;
-
-	
-	
-	letter-spacing: 0px;
-	
-}
-
-
-
-
-
-
-
-
-
-/* Color picker style settings */
-
-
-
-/* Option for removing base margin on paragraphs */
-#stacks_in_4485389 p,
-#stacks_in_4485389 {
 	
 	
 }
