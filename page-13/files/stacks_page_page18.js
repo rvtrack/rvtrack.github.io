@@ -1637,24 +1637,6 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 // });
 
 return stack;})(stacks.stacks_in_4483474);
-stacks.stacks_in_4485425 = {};
-stacks.stacks_in_4485425 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	
-		$('#stacks_in_4485425 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-		$('.stacks_top').css({'overflow' : 'visible'});
-	
-});
-
-return stack;})(stacks.stacks_in_4485425);
-stacks.stacks_in_4485426 = {};
-stacks.stacks_in_4485426 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function() {
-  $('#stacks_in_4485426 .alert a').addClass('alert-link');
-});
-
-
-return stack;})(stacks.stacks_in_4485426);
 stacks.stacks_in_4485373 = {};
 stacks.stacks_in_4485373 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
