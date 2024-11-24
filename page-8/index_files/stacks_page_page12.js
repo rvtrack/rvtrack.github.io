@@ -1664,23 +1664,6 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 });
 
 return stack;})(stacks.stacks_in_4485337);
-stacks.stacks_in_4485235 = {};
-stacks.stacks_in_4485235 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-	
-		$('#stacks_in_4485235 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
-		$('.stacks_top').css({'overflow' : 'visible'});
-	
-});
-
-return stack;})(stacks.stacks_in_4485235);
-stacks.stacks_in_4485298 = {};
-stacks.stacks_in_4485298 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
-  
-});
-
-return stack;})(stacks.stacks_in_4485298);
 stacks.stacks_in_4485358 = {};
 stacks.stacks_in_4485358 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
