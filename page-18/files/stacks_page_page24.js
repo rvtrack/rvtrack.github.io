@@ -1692,6 +1692,23 @@ var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
 });
 
 return stack;})(stacks.stacks_in_4485401);
+stacks.stacks_in_4485431 = {};
+stacks.stacks_in_4485431 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+	
+		$('#stacks_in_4485431 > .container').parentsUntil('.stacks_top').css('overflow', 'visible');
+		$('.stacks_top').css({'overflow' : 'visible'});
+	
+});
+
+return stack;})(stacks.stacks_in_4485431);
+stacks.stacks_in_4485434 = {};
+stacks.stacks_in_4485434 = (function(stack) {
+var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
+  
+});
+
+return stack;})(stacks.stacks_in_4485434);
 stacks.stacks_in_4483650 = {};
 stacks.stacks_in_4483650 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;$(document).ready(function(){
